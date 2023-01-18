@@ -3,7 +3,7 @@ import React from "react";
 const UserDetail = ({ UserImage, UserName, LastChat }) => {
   return (
     <>
-      <div className="w-full flex gap-6 items-center">
+      <div className="w-full flex gap-6 items-center py-4 px-2">
         <img
           src={UserImage}
           alt="User Profile"
