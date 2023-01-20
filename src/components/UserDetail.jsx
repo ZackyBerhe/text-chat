@@ -1,9 +1,12 @@
 import React from "react";
 
-const UserDetail = ({ UserImage, UserName, LastChat }) => {
+const UserDetail = ({ UserImage, UserName, LastChat, handleClick }) => {
   return (
     <>
-      <div className="w-full flex gap-6 items-center py-4 px-2">
+      <div
+        onClick={handleClick}
+        className="w-full flex gap-6 items-center py-4 px-2 cursor-pointer hover:bg-white/10"
+      >
         <img
           src={UserImage}
           alt="User Profile"
